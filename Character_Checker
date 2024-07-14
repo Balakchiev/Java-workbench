@@ -1,0 +1,35 @@
+import java.util.Scanner;
+ 
+public class check_character {
+	public static void main(String[] args) {
+		checkCharacter();
+	}
+	public static void checkCharacter() {
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("please input a character");
+			while(true) {
+				String input = sc.next();
+				if (input.length()==1) {
+					char ch = input.charAt(0);
+					if( Character.isUpperCase(ch)) {
+						System.out.println("Char is upper case");
+					}else if (Character.isLowerCase(ch)) {
+						System.out.println("Char is Lower case");
+					} else if (Character.isDigit(ch)) {
+						System.out.println("Char is a digit");
+					}else {
+						System.out.println("Char is a special character");
+					}
+				}
+				else if (input.equals("Done")){
+					System.out.println("Thank you");
+					break;
+				}
+				else {
+					System.out.println("Please input only single character");
+				}
+			}
+		}
+	}
+ 
+}
