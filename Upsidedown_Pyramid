@@ -1,0 +1,23 @@
+
+public class stars_upside_down {
+	public static void main(String[] args) {
+        int i,j;
+        int n= 6;
+        //handle the number of row
+       for(i = 1 ; i<=n; i++){
+           // inner loop to print spaces
+           for (j=1; j<i; j++){
+               System.out.print(" ");
+           }
+           // to print the j values
+          for (j=i; j<=n; j++){
+              System.out.print('*'+ " ");
+       }
+       // inserting new line after each loop
+       System.out.println();
+       }
+           }
+
+       }
+
+
